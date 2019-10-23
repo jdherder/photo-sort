@@ -1,15 +1,29 @@
 {
   "name": "photo-sort",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "watch": "rollup -cw",
+    "start": "npm run build && node dist/index.js"
   },
-  "author": "",
+  "author": "Josh Herder",
   "license": "ISC",
   "dependencies": {
     "exif": "^0.6.0",
-    "glob": "^7.1.4"
+    "glob": "^7.1.5"
+  },
+  "devDependencies": {
+    "@types/exif": "^0.6.0",
+    "@types/glob": "^7.1.1",
+    "rollup": "^1.25.1",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "typescript": "^3.6.4"
   }
 }
