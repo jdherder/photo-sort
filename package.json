@@ -20,8 +20,10 @@
     "glob": "^7.1.5"
   },
   "devDependencies": {
+    "@types/cli-progress": "^1.8.1",
     "@types/exif": "^0.6.0",
     "@types/glob": "^7.1.1",
+    "cli-progress": "^3.3.1",
     "rollup": "^1.25.1",
     "rollup-plugin-typescript2": "^0.24.3",
     "typescript": "^3.6.4"
